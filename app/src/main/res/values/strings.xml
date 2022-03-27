@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PizzaApp</string>
+    <string name="Pizzeria_Juanito">Pizzería Juanito</string>
+    <string name="Indicacion1">Introduzca su nombre</string>
+    <string name="Size1">Pequeña $4.00</string>
+    <string name="Size2">Mediana $8.00</string>
+    <string name="Size3">Grande $12.00</string>
+    <string name="Ingrediente1">Carne $1.50</string>
+    <string name="Ingrediente2">Queso $1.75</string>
+    <string name="Ingrediente3">Peperoni $1.75</string>
+    <string name="Ingrediente4">Tocino $2.00</string>
+    <string name="Ingrediente5">Champiñones $1.25</string>
+    <string name="Ingrediente6">Piña $0.50</string>
+    <string name="Ingrediente7">Aceitunas 1.00$</string>
+</resources>

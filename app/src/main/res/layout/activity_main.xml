@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pizza_fondo"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rgIngredientes"
+        android:layout_width="389dp"
+        android:layout_height="231dp"
+        android:layout_marginBottom="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <CheckBox
+            android:id="@+id/cbCarne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingrediente1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/cbQueso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingrediente2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/cbPeperoni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingrediente3"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/cbTocino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingrediente4"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/cbChampi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingrediente5"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/cbPineApple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingrediente6"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/cbAceitunas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ingrediente7"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Pizzeria_Juanito"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        tools:text="@string/Pizzeria_Juanito" />
+
+    <EditText
+        android:id="@+id/eTxtName"
+        android:layout_width="409dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="600dp"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="true"
+        android:hint="@string/Indicacion1"
+        android:inputType="textPersonName|textCapSentences"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="407dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="488dp"
+        android:orientation="horizontal"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/rBtnSmall"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:fadingEdge="horizontal"
+            android:minHeight="48dp"
+            android:text="@string/Size1"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rBtnMedium"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:scrollHorizontally="false"
+            android:text="@string/Size2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rBtnBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:text="@string/Size3"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProcesar"
+        android:layout_width="213dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="process"
+        android:text="Procesar la orden"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="403dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="17dp"
+        android:text="Seleccione el tamaño"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTxtName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="403dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="22dp"
+        android:text="Elija los ingredientes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</android.support.constraint.ConstraintLayout>
